@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/gray_light">
+
+    <TextView
+        android:id="@+id/productTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productPriceLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productTitle3"
+        android:text="Valor:"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productPriceValue3"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/productMarcaLabel3"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/productPriceLabel3"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/productQntLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productPriceLabel3"
+        android:text="Qtdade:"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productQntValue3"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/productQntLabel3"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/productQntLabel3"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/productMarcaLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/productPriceLabel3"
+        android:layout_marginStart="120dp"
+        android:layout_toEndOf="@id/productPriceLabel3"
+        android:text="Marca:"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productMarcaValue3"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/productMarcaLabel3"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/productMarcaLabel3"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/productRefValue3"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/productRefLabel3"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@id/productRefLabel3"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/productRefLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/productQntLabel3"
+        android:layout_alignLeft="@id/productMarcaValue3"
+        android:layout_marginLeft="-51dp"
+        android:text="Ref: "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productDesc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productQntLabel3"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:paddingStart="8dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/white"
+        android:textSize="7pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productLeve3"
+        android:layout_toEndOf="@id/productDesc3"
+        android:layout_alignBaseline="@id/productDesc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/orange"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
