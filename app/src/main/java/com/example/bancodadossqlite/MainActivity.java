@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         try{
             SQLiteDatabase bancoDados;
-            bancoDados = openOrCreateDatabase("PRJADS2", MODE_PRIVATE, null);
-            bancoDados.execSQL("CREATE TABLE IF NOT EXISTS PROMOCAO4 "
+            bancoDados = openOrCreateDatabase("PRJADS", MODE_PRIVATE, null);
+            bancoDados.execSQL("CREATE TABLE IF NOT EXISTS PROMOCAO "
                     +" (CODPROD INT, DESCRPROD VARCHAR, "
                     +" MARCA VARCHAR, "
                     +" REFERENCIA VARCHAR, "
@@ -53,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
                     +" LEVE VARCHAR, "
                     +" VALOR FLOAT, DESCONTO VARCHAR); ");
 
-            bancoDados.execSQL("INSERT INTO PROMOCAO4 (CODPROD, DESCRPROD, MARCA, REFERENCIA, QUANTIDADE, LEVE, VALOR, DESCONTO) "
+            bancoDados.execSQL("INSERT INTO PROMOCAO (CODPROD, DESCRPROD, MARCA, REFERENCIA, QUANTIDADE, LEVE, VALOR, DESCONTO) "
                             + "VALUES (1, 'Arroz', 'Vasconcelos', '001', 12, 'Leve 5 pague 4', 20, '10% de desconto')");
-            bancoDados.execSQL("INSERT INTO PROMOCAO4 (CODPROD, DESCRPROD, MARCA, REFERENCIA, QUANTIDADE, LEVE, VALOR, DESCONTO) "
+            bancoDados.execSQL("INSERT INTO PROMOCAO (CODPROD, DESCRPROD, MARCA, REFERENCIA, QUANTIDADE, LEVE, VALOR, DESCONTO) "
                     + "VALUES (2, 'Feijão', 'Vasconcelos', '002', 15, 'Leve 6 pague 5', 10, '5% de desconto')");
-            bancoDados.execSQL("INSERT INTO PROMOCAO4 (CODPROD, DESCRPROD, MARCA, REFERENCIA, QUANTIDADE, LEVE, VALOR, DESCONTO) "
+            bancoDados.execSQL("INSERT INTO PROMOCAO (CODPROD, DESCRPROD, MARCA, REFERENCIA, QUANTIDADE, LEVE, VALOR, DESCONTO) "
                     + "VALUES (3, 'Detergente', 'Ypê', '405', 100, 'Leve 10 pague 9', 1.99, '20% de desconto')");
-            Cursor cursor = bancoDados.rawQuery("SELECT CODPROD, DESCRPROD, MARCA, REFERENCIA, QUANTIDADE, LEVE, VALOR, DESCONTO FROM PROMOCAO4 WHERE CODPROD IN (1, 2, 3)", null);
+            Cursor cursor = bancoDados.rawQuery("SELECT CODPROD, DESCRPROD, MARCA, REFERENCIA, QUANTIDADE, LEVE, VALOR, DESCONTO FROM PROMOCAO WHERE CODPROD IN (1, 2, 3)", null);
             cursor.moveToFirst();
 
             while (cursor != null && cont <= 3) {
